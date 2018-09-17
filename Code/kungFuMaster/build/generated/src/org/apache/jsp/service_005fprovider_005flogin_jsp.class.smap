@@ -1,0 +1,24 @@
+SMAP
+service_005fprovider_005flogin_jsp.java
+JSP
+*S JSP
+*F
++ 0 service_provider_login.jsp
+service_provider_login.jsp
++ 1 public_header.jsp
+public_header.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+1,10:50
+1#1,82:60
+10#0,25:141
+35,5:167
+39:172
+40:173,3
+41,2:176
+43,3:179
+45,4:182
+1#2,12:186
+48#0,5:198
+*E

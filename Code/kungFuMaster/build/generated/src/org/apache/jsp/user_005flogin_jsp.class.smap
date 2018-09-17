@@ -1,0 +1,24 @@
+SMAP
+user_005flogin_jsp.java
+JSP
+*S JSP
+*F
++ 0 user_login.jsp
+user_login.jsp
++ 1 public_header.jsp
+public_header.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+1,14:50
+1#1,82:64
+14#0,23:145
+37,5:169
+41:174
+42:175,3
+43,2:178
+45,3:181
+47,3:184
+1#2,12:186
+49#0,5:198
+*E

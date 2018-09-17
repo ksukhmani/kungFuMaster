@@ -1,0 +1,306 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class user_005fsignup_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(2);
+    _jspx_dependants.add("/public_header.jsp");
+    _jspx_dependants.add("/footer.jsp");
+  }
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <link href=\"bootstrap-3.3.7-dist/css/bootstrap.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
+      out.write("        \n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("        \n");
+      out.write("        <script>\n");
+      out.write("            \n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("        function check() {\n");
+      out.write("                var val = document.getElementById(\"t1\").value;\n");
+      out.write("                if((val!==\"\"))\n");
+      out.write("                { if (val.length >= 7 && val.indexOf(\".\") !== -1 && val.indexOf(\"@\") !== -1 && val.lastIndexOf(\".\") > val.indexOf(\"@\"))\n");
+      out.write("                {\n");
+      out.write("                    alert(\"email check\");\n");
+      out.write("                }\n");
+      out.write("                else\n");
+      out.write("                {\n");
+      out.write("                    alert(\"fail\");\n");
+      out.write("                    document.getElementById(\"t1\").value=\"\";\n");
+      out.write("                }\n");
+      out.write("            }}\n");
+      out.write("            function check1()\n");
+      out.write("            {\n");
+      out.write("                \n");
+      out.write("                var tel = document.getElementById(\"tel\").value;\n");
+      out.write("                if(tel!==\"\")\n");
+      out.write("                { if(!isNaN(tel))\n");
+      out.write("                {\n");
+      out.write("                if (tel.length == 10)\n");
+      out.write("                {\n");
+      out.write("                    alert(\"Pass\");\n");
+      out.write("                }\n");
+      out.write("                else\n");
+      out.write("                {\n");
+      out.write("                    alert(\"Fail1\");\n");
+      out.write("                    document.getElementById(\"tel\").value=\"\";\n");
+      out.write("                }\n");
+      out.write("            }\n");
+      out.write("            else\n");
+      out.write("            {\n");
+      out.write("                alert(\"NOT A NUMBER\");\n");
+      out.write("                document.getElementById(\"tel\").value=\"\";\n");
+      out.write("            }\n");
+      out.write("            }}\n");
+      out.write("            function check2()\n");
+      out.write("            {\n");
+      out.write("                var name = document.getElementById(\"n1\").value;\n");
+      out.write("                if(name!==\"\")\n");
+      out.write("                {\n");
+      out.write("                alert(name);\n");
+      out.write("                var xml = new XMLHttpRequest();\n");
+      out.write("                xml.onreadystatechange=function()\n");
+      out.write("                {\n");
+      out.write("                    if(xml.readyState==4 && xml.status==200)\n");
+      out.write("                    {\n");
+      out.write("                        var res = xml.responseText.trim();\n");
+      out.write("                    if(res == \"success\")\n");
+      out.write("                    {\n");
+      out.write("                    }\n");
+      out.write("                    else\n");
+      out.write("                    {\n");
+      out.write("                        document.getElementById(\"n1\").value=\"\";\n");
+      out.write("                        alert(\"Name Must Not Contain Numbers\");\n");
+      out.write("                    }\n");
+      out.write("                    }\n");
+      out.write("                };\n");
+      out.write("                xml.open(\"GET\",\"CheckName.jsp?name=\"+name,true);\n");
+      out.write("                xml.send();\n");
+      out.write("            }}\n");
+      out.write("         function check3()\n");
+      out.write("            {\n");
+      out.write("                \n");
+      out.write("                var pass = document.getElementById(\"p1\").value;\n");
+      out.write("                if(pass!==\"\")\n");
+      out.write("                {\n");
+      out.write("                var xml = new XMLHttpRequest();\n");
+      out.write("                xml.onreadystatechange = function ()\n");
+      out.write("                {\n");
+      out.write("                    if (xml.readyState == 4 && xml.status == 200)\n");
+      out.write("                    {\n");
+      out.write("                        var res = xml.responseText.trim();\n");
+      out.write("                        if(res == \"Success\")\n");
+      out.write("                        {\n");
+      out.write("                            alert(\"yes\");\n");
+      out.write("                        }\n");
+      out.write("                        else\n");
+      out.write("                        {\n");
+      out.write("                            alert(\"Password Must Contain one Uppercase,one Number and One Special Character\");\n");
+      out.write("                            document.getElementById(\"p1\").value=\"\";\n");
+      out.write("                        }\n");
+      out.write("                    }\n");
+      out.write("                };\n");
+      out.write("                xml.open(\"GET\",\"CheckDemo_1.jsp?pass=\"+pass,true);\n");
+      out.write("                xml.send();\n");
+      out.write("            }\n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("    }\n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("</script>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("            ");
+      out.write("<link href=\"css/bootstrap.css\" type=\"text/css\" rel=\"stylesheet\" media=\"all\">\n");
+      out.write("<link href=\"css/style.css\" type=\"text/css\" rel=\"stylesheet\" media=\"all\">\n");
+      out.write("<link rel=\"stylesheet\" href=\"css/flexslider.css\" type=\"text/css\" media=\"screen\" />\n");
+      out.write("\n");
+      out.write("<!--web-fonts-->\n");
+      out.write("<link href='//fonts.googleapis.com/css?family=Oranienbaum' rel='stylesheet' type='text/css'>\n");
+      out.write("<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>\n");
+      out.write("<!--//web-fonts-->\n");
+      out.write("<!-- js -->\n");
+      out.write("<script src=\"js/jquery-1.11.1.min.js\"></script> \n");
+      out.write("<script src=\"js/modernizr.custom.js\"></script>\n");
+      out.write("<script src=\"bootstrap-3.3.7-dist/js/bootstrap.min.js\"></script>\n");
+      out.write("<script>\n");
+      out.write("      var xmlhttp;\n");
+      out.write("            function fetch_search(value)\n");
+      out.write("            {\n");
+      out.write("                xmlhttp = new XMLHttpRequest();\n");
+      out.write("                xmlhttp.open(\"GET\", \"autocomplete.jsp?value=\"+value, true);\n");
+      out.write("                xmlhttp.onreadystatechange =go8;\n");
+      out.write("                xmlhttp.send();\n");
+      out.write("\n");
+      out.write("            }\n");
+      out.write("            function go8()\n");
+      out.write("            {\n");
+      out.write("\n");
+      out.write("                if (xmlhttp.readyState == 4 && xmlhttp.status == 200)\n");
+      out.write("                {\n");
+      out.write("\n");
+      out.write("                    document.getElementById(\"search_h\").innerHTML = xmlhttp.responseText;\n");
+      out.write("                    \n");
+      out.write("                }\n");
+      out.write("\n");
+      out.write("            }\n");
+      out.write("    \n");
+      out.write("    \n");
+      out.write("</script>\n");
+      out.write("<!-- //js -->\n");
+      out.write("<!--banner-->\n");
+      out.write("<div class=\"top-nav\" style=\"background: rgb(25,52,81)\">\n");
+      out.write("    <!--navigation-->\n");
+      out.write("    <div class=\"top-nav\">\n");
+      out.write("        <div class=\"container\">\n");
+      out.write("            <div class=\"navbar-header logo\">\n");
+      out.write("                <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n");
+      out.write("                    <span class=\"sr-only\">Toggle navigation</span>\n");
+      out.write("                    <span class=\"icon-bar\"></span>\n");
+      out.write("                    <span class=\"icon-bar\"></span>\n");
+      out.write("                    <span class=\"icon-bar\"></span>\n");
+      out.write("                </button>\n");
+      out.write("                <h1 class=\"wow fadeInUp animated\" data-wow-delay=\".5s\"><a href=\"index.html\">B-W-E</a></h1>\n");
+      out.write("            </div>\n");
+      out.write("            <!-- Collect the nav links, forms, and other content for toggling -->\n");
+      out.write("            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n");
+      out.write("                <ul class=\"nav navbar-right\" style=\"position: relative\">\n");
+      out.write("                    <li><a href=\"index.jsp\" class=\"active\"><span data-hover=\"Home\">Home</span></a></li>\n");
+      out.write("                    <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Login</a>\n");
+      out.write("                    <ul class=\"dropdown-menu\">\n");
+      out.write("                        <li><a href=\"user_login.jsp\" class=\"active\" style=\"color: black\"><span data-hover=\"User Login\">User Login</span></li>\n");
+      out.write("                        <li><a href=\"service_provider_login.jsp\" class=\"active\" style=\"color: black\"><span data-hover=\"Service Provider Login\">Service Provider Login</span></li>\n");
+      out.write("                    </ul>\n");
+      out.write("                    </li>\n");
+      out.write("                   <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Register</a>\n");
+      out.write("                    <ul class=\"dropdown-menu\">\n");
+      out.write("                        <li><a href=\"user_signup.jsp\" class=\"active\" style=\"color: black\"><span data-hover=\"User Sign Up\">User Sign Up</span></li>\n");
+      out.write("                        <li><a href=\"service_provider_signup.jsp\" class=\"active\" style=\"color: black\"><span data-hover=\"Service Provider Sign Up\">Service Provider Sign Up</span></li>\n");
+      out.write("                    </ul>\n");
+      out.write("                    </li>\n");
+      out.write("                    <li><a href=\"index.jsp#about\" class=\"scroll\"><span data-hover=\"About\">About</span></a></li>\n");
+      out.write("                    <li><a href=\"index.jsp#contact\" class=\"scroll\"><span data-hover=\"About\">Contact us</span></a></li>\n");
+      out.write("                    <li>\n");
+      out.write("                         <input type=\"text\" class=\"form-control\" name=\"search\" placeholder=\"search service provider\" onkeyup=\"fetch_search(this.value)\"/>\n");
+      out.write("                         <div id=\"search_h\" style=\"position: absolute;top: 50px;left: 0px;background-color: white;width: 200px;z-index: 1000;\"></div>\n");
+      out.write("                    </li>\n");
+      out.write("                  \n");
+      out.write("                </ul>\n");
+      out.write("                <div class=\"clearfix\"> </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("    </div>\t\n");
+      out.write("</div>\n");
+      out.write("    <!--//navigation-->\n");
+      out.write("\n");
+      out.write("                <div class=\"container\" style=\"min-height: 523px\">\n");
+      out.write("            \n");
+      out.write("            <center><h1>Sign up</h1></center>\n");
+      out.write("            <br>\n");
+      out.write("            <form class=\"form-horizontal\" action=\"action_user_signup.jsp\" method=\"post\" class=\"form-horizontal\" >\n");
+      out.write("                <div class=\"form-group\">\n");
+      out.write("                    <label class=\"col-sm-2\">Email</label>\n");
+      out.write("                    <div class=\"col-sm-10\"><input type=\"text\" class=\"form-control\" name=\"email\" onblur=\"check()\" id=\"t1\" required style=\"margin-bottom:15px\" /></div></div>\n");
+      out.write("                <div class=\"form-group\">\n");
+      out.write("                    <label class=\"col-sm-2\">Name</label>\n");
+      out.write("                    <div class=\"col-sm-10\"><input type=\"text\" class=\"form-control\" name=\"name\" onblur=\"check2()\" id=\"n1\" required style=\"margin-bottom:15px\"/></div></div>\n");
+      out.write("                <div class=\"form-group\">\n");
+      out.write("                    <label class=\"col-sm-2\">Phone</label>\n");
+      out.write("                    <div class=\"col-sm-10\"><input type=\"text\" class=\"form-control\" name=\"phone\" onblur=\"check1()\" id=\"tel\" style=\"margin-bottom:15px\" required/></div></div>\n");
+      out.write("                <div class=\"form-group\">\n");
+      out.write("                    <label class=\"col-sm-2\">Password</label>\n");
+      out.write("                    <div class=\"col-sm-10\"><input type=\"password\" class=\"form-control\" name=\"password\" onblur=\"check3()\" id=\"p1\" style=\"margin-bottom:15px\" required=\"\" /></div></div>\n");
+      out.write("                    <div class=\"form-group\">\n");
+      out.write("                   <label class=\"col-sm-2\">Security Question</label>\n");
+      out.write("                    <div class=\"col-sm-10\">\n");
+      out.write("                        <select class=\"form-control\" name=\"security_ques\" required style=\"margin-bottom:15px\">\n");
+      out.write("                            <option hidden>--select a security question--</option>\n");
+      out.write("                <option>what is your favorite color?</option>\n");
+      out.write("                <option>what is your pet name?</option>\n");
+      out.write("                <option>what is your nationality?</option>\n");
+      out.write("                <option>which is your birth place?</option>\n");
+      out.write("                <option>what is your favorite dish?</option>\n");
+      out.write("                <option>which is your favorite movie?</option>\n");
+      out.write("                        </select></div></div>\n");
+      out.write("                          <div class=\"form-group\">\n");
+      out.write("                    <label class=\"col-sm-2\">Security Answer</label>\n");
+      out.write("                    <div class=\"col-sm-10\"><input type=\"text\" class=\"form-control\" name=\"security_ans\" required style=\"margin-bottom:15px\"/></div></div>\n");
+      out.write("                    \n");
+      out.write("                    <center><input type=\"submit\" value=\"Signup\"  class=\"btn btn-success\"  style=\"background: rgb(25,52,81);color:white\"/></center>\n");
+      out.write("            </form>          \n");
+      out.write("                   \n");
+      out.write("                </div>\n");
+      out.write("               ");
+      out.write("<div class=\"container-fluid\" style=\"background: rgb(25,52,81);padding: 0px;margin: 0px;\">\n");
+      out.write("    <div class=\"row\" style=\"padding: 0px;margin: 0px\">\n");
+      out.write("        <div class=\"col-sm-7\" style=\"padding: 15px\">\n");
+      out.write("            <p style=\"color: #24FFED;font-size: 20px\">Guru Nanak Dev University,Amritsar</p>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"col-sm-5\" style=\"padding: 15px\">\n");
+      out.write("            <p style=\"color:#24FFED;font-size: 20px\">Developed By:Komal Nayyar</p>\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("    </div>\n");
+      out.write("</div>");
+      out.write("\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

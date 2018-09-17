@@ -1,0 +1,26 @@
+SMAP
+book_005fservice_005fprovider_jsp.java
+JSP
+*S JSP
+*F
++ 0 book_service_provider.jsp
+book_service_provider.jsp
++ 1 user_header.jsp
+user_header.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+1,94:52
+1#1,72:146
+94#0,5:217
+98,12:222
+109:234
+110:235,3
+111:238
+112:239,5
+113,11:244
+124,2:256
+125,8:258
+1#2,12:266
+132#0,7:278
+*E

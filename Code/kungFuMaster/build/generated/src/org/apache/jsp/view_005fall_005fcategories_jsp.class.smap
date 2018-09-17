@@ -1,0 +1,32 @@
+SMAP
+view_005fall_005fcategories_jsp.java
+JSP
+*S JSP
+*F
++ 0 view_all_categories.jsp
+view_all_categories.jsp
++ 1 admin_header.jsp
+admin_header.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+1,39:51
+1#1,54:89
+39#0,20:143
+59,10:164
+68,3:174
+71:177,3
+72,2:180
+74:182,3
+75,2:185
+77:187,3
+78,2:190
+80:192,3
+81,3:195
+84:198,3
+85,4:201
+89,3:206
+91,9:209
+1#2,12:218
+99#0,4:230
+*E

@@ -1,0 +1,28 @@
+SMAP
+admin_005fchange_005fpass1_jsp.java
+JSP
+*S JSP
+*F
++ 0 admin_change_pass1.jsp
+admin_change_pass1.jsp
++ 1 admin_header.jsp
+admin_header.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+1,29:50
+1#1,54:79
+29#0,7:133
+36,2:141
+37,3:143
+40:146,3
+41,12:149
+53,5:162
+57:167
+58:168,3
+59:171
+60,2:173
+61,5:175
+1#2,12:180
+65#0,4:192
+*E

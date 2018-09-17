@@ -1,0 +1,24 @@
+SMAP
+add_005fcategory1_jsp.java
+JSP
+*S JSP
+*F
++ 0 add_category1.jsp
+add_category1.jsp
++ 1 admin_header.jsp
+admin_header.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+1,14:50
+1#1,54:64
+14#0,17:118
+30,5:135
+34:140
+35:141,3
+36:144
+36,2:145
+37,4:147
+1#2,12:151
+40#0,4:163
+*E
